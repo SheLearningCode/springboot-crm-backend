@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:latest:///student_crm?TC_INITSCRIPT=db/migration/integration_test_init_script.sql
+    username: student_crm_service
+    password: student_crm_service
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  kafka:
+    bootstrap-servers: localhost:9092
+    client-id: student-crm
