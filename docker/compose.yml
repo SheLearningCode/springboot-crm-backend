@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
   student-crm:
-    image: novatec/talenthub/nilassonntag/chapter2:latest
+    image: novatec/talenthub/chapter2:latest
     environment:
       SPRING_PROFILES_ACTIVE: local
     ports:
