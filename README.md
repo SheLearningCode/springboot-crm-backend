@@ -1,3 +1,42 @@
+# Student Courses CRM
+
+## Overview
+
+The Student Courses CRM is a web-based application designed to streamline the management of student enrollments in various courses. It facilitates easier accessibility and organization of students and courses, providing a centralized platform for administrators to manage enrollments, track student progress, and administer course materials.
+
+## Purpose
+
+The purpose of this project is twofold:
+
+1. **Organizational Efficiency**: The CRM simplifies the process of managing student enrollments and course offerings. It allows administrators to easily add, remove, and update student records and course details, reducing manual effort and improving organizational efficiency.
+
+2. **Learning and Development**: The project serves as a learning opportunity for developing clean and maintainable code using Kotlin. By implementing CRUD operations and API clients, developers gain hands-on experience in building RESTful APIs and consuming them in client applications.
+
+## Project Structure
+
+The project is structured into two main components:
+
+- **Student API**: likely serves as the interface through which clients interact with the application,  
+- **Service API**: handles the backend logic and data management related to student entities.
+
+This separation of concerns allows for easier scalability, maintainability, and deployment of the application. 
+In a microservices architecture, applications are structured as a collection of loosely coupled services, each responsible for a specific business function. These services communicate with each other via APIs, typically using lightweight protocols such as HTTP or messaging queues.
+
+## Microservices architectures offer several advantages, including:
+
+Scalability: Individual services can be scaled independently based on demand, allowing for better resource utilization and improved performance.
+
+Flexibility: Services can be developed, deployed, and updated independently, enabling faster development cycles and easier maintenance.
+
+Resilience: Fault isolation and graceful degradation mechanisms help prevent failures in one service from affecting the entire system.
+
+Technology Diversity: Different services can be built using different technologies and programming languages, allowing teams to choose the best tools for each task.
+
+However, microservices architectures also come with challenges, such as increased complexity in managing distributed systems, inter-service communication overhead, and potential data consistency issues.
+
+Overall, the choice of a microservices architecture suggests a modular and scalable approach to building your application, which aligns well with the goals of flexibility and maintainability.
+
+
 # Building the application
 
 ## Prerequisites
