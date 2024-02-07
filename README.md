@@ -14,10 +14,34 @@ The purpose of this project is twofold:
 
 ## Project Structure
 
-The project is structured into two main components:
+The project is organized into two primary components:
 
-- **Student API**: likely serves as the interface through which clients interact with the application,  
-- **Service API**: handles the backend logic and data management related to student entities.
+## Student API
+Located under backend/student-api, this module handles client-side interactions and API endpoints related to student management. The structure includes:
+
+DTOs: Data transfer objects for requests, responses, and updates related to courses, enrolments, and students.
+CourseRequ.kt, CourseRequestDto.kt, EnrolmentR.kt, EnrolmentRequestDto.kt, StudentReq.kt, StudentRequestDto.kt, CourseResponseDto.kt, StudentResponseDto.kt, StudentUpdateDto.kt
+APIs: Controllers defining the routes and handling HTTP requests.
+CourseApi.kt, EnrolmentApi.kt, StudentApi.kt
+
+## Student Service
+Found in backend/student-service, this module encompasses backend logic and data management for student operations. Key components include:
+
+Controllers: Handling HTTP requests and mapping them to service operations.
+CourseController.kt, EnrolmentController.kt, StudentController.kt
+Persistence Layer: Data entities and repositories for managing course, enrolment, and student data.
+CourseRepository.kt, EnrolmentRepository.kt, StudentRepository.kt
+Service Layer: Implementing business logic and performing operations related to courses, enrolments, and students.
+CourseService.kt, EnrolmentService.kt, StudentService.kt
+Application Entry Point: The main application class initializing the Spring Boot application.
+Talenthubch1Application.kt
+
+## Additional Files
+Docker Configuration: Docker-related files for containerization and deployment.
+Resources: Configuration files and static resources used by the application.
+Test: Contains unit and integration tests for the application components.
+Gradle Configuration: Configuration files for the Gradle build system.
+README.md: Project documentation providing an overview of the project structure and setup instructions.
 
 This separation of concerns allows for easier scalability, maintainability, and deployment of the application. 
 In a microservices architecture, applications are structured as a collection of loosely coupled services, each responsible for a specific business function. These services communicate with each other via APIs, typically using lightweight protocols such as HTTP or messaging queues.
